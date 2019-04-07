@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="Fr">
+
+    <title> Passphrase Generator avocalix</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div class="wrapper center">
+        <div class="content">
+
+
+            <select id="numWords">
+
+                <option value="5">5</option>
+                <option value="6" selected>6</option>
+
+            </select>
+
+
+
+            <select id="separatorType">
+                <option value=" " selected>spaces (" ")</option>
+
+            </select>
+
+            <select id="wordList">
+
+                <option value="diceware_fr">Diceware - French</option>
+
+            </select>
+
+
+
+            <select id="capitalization">
+                <option value="none" selected>no part of any</option>
+
+
+            </select>
+
+
+
+            <div class="left-side text-center">
+                <div class="dice-inputs center" id="dice-inputs"></div>
+                <div class="buttons center">
+
+                    <button type="button" id="clear"> CLEAR </button>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="center text-center" id="generated-passphrase"></div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="js/scripts.js"></script>
+
+
+
+        <script async src="data/diceware_fr.min.js"></script>
+
+
+</body>
+
+</html>
